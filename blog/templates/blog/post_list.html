@@ -1,11 +1,25 @@
-<div>
-    <h1><a href="/">Django Blog</a></h1>
-</div>
+<html>
 
-{% for post in posts %}
+<head>
+    <title>Django blog</title>
+</head>
+
+<body>
     <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h1><a href="/">Django Blog</a></h1>
     </div>
-{% endfor %}
+
+    <div>
+        <p>published: 15.01.2020, 12:14</p>
+        <h2><a href="">My first post</a></h2>
+        <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
+    </div>
+
+    <div>
+        <p>公開日: 2020/01/15, 12:14</p>
+        <h2><a href="">2番目の投稿</a></h2>
+        <p> こんにちは！ よろしくお願いします！ </p>
+    </div>
+</body>
+
+</html>
